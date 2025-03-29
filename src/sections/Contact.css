@@ -1,0 +1,89 @@
+/* Contact Section */
+.contact-section {
+    padding: 80px 10%;
+    background: #e5ebec;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    background-color: #e5ebec;
+}
+
+/* Left Section - Contact Info */
+.contact-info {
+    flex: 1;
+    text-align: left;
+    background-color: #e5ebec;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item .icon {
+    font-size: 24px;
+    color: #361c46;
+    margin-right: 10px;
+}
+
+/* Right Section - Follow Me */
+.follow-me {
+    flex: 1;
+    text-align: left;
+}
+
+.follow-me h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 30px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon.linkedin {
+    color: #0e76a8;
+}
+
+.social-icon.instagram {
+    color: #e4405f;
+}
+
+.social-icon.github {
+    color: #27102d;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

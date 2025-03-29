@@ -1,0 +1,55 @@
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ensure full width */
+    background: #e5ebec;
+    /* Blue background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    /* Space between name and sections */
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+    /* Ensures padding doesn’t add extra width */
+}
+
+/* Styling for Name */
+.navbar-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #361c46;
+    /* Dark text */
+    margin-left: 20px;
+    /* Adjust margin instead of padding */
+}
+
+/* Styling for Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    /* Space between buttons */
+    margin-right: 20px;
+    /* Prevents buttons from sticking to the edge */
+}
+
+.navbar-links button {
+    background: transparent;
+    border: none;
+    color: #361c46;
+    /* Dark text */
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    padding: 10px 15px;
+    /* Adjust padding */
+}
+
+.navbar-links button:hover {
+    color: #1915efdf;
+    /* Light blue on hover */
+}

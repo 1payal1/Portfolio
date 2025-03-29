@@ -1,0 +1,83 @@
+/* About Me Section Styling */
+.about-section {
+    padding: 50px 20px;
+    background-color: #e5ebec;
+    /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 695px;
+    width: 100%;
+
+
+
+}
+
+/* Container to align image and text */
+.about-container {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Image Styling */
+.about-image img {
+    width: 270px;
+    height: 500px;
+    border-radius: 50%;
+
+
+
+    /* Circular image */
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Content */
+.about-content {
+    width: 900px;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.about-content h1 {
+    font-size: 50px;
+    color: #361c46;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #361c46;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+.about-content p {
+    font-size: 18px;
+    padding-left: 10px;
+    color: #361c46;
+    align-items: flex-start;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 200px;
+        height: 200px;
+    }
+}

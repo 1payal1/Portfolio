@@ -1,0 +1,60 @@
+/* Education Section */
+.education-section {
+    padding: 60px 20px;
+    background-color: #e5ebec;
+    text-align: center;
+}
+
+/* Section Title */
+.education-title {
+    font-size: 40px;
+    color: #361c46;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Education Container */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Individual Education Cards */
+.education-card {
+    background: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styling */
+.education-card h3 {
+    font-size: 22px;
+    color: #361c46;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    font-size: 18px;
+    color: #361c46;
+    margin: 5px 0;
+    text-align: left;
+    padding-left: 100px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .education-card {
+        width: 90%;
+    }
+}

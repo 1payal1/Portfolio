@@ -1,0 +1,60 @@
+/* Certifications Section */
+.certifications-section {
+    padding: 120px 10%;
+    background: #e5ebec;
+    color: #361c46;
+    text-align: center;
+    width: 100%;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #361c46;
+}
+
+/* Certifications Container */
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #e5ebec;
+}
+
+/* Certification Card */
+.certification-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.certification-card:hover {
+    transform: scale(1.02);
+}
+
+/* Certification Details */
+.certification-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.organization {
+    font-size: 16px;
+    color: #361c46;
+}
+
+.year {
+    font-size: 14px;
+    color: #361c46;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .certifications-container {
+        flex-direction: column;
+    }
+}

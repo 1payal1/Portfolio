@@ -1,38 +1,49 @@
-.App {
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent unwanted horizontal scroll */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
+/* App container */
+.app-container {
   text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 100vw;
+  /* Prevent extra spacing */
+  overflow-x: hidden;
+  /* Prevent side scrolling */
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Sections */
+.section {
+  height: 100vh;
+  /* Full screen height for better scrolling */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Contact section specific styles */
+.contact-info {
+  background: #d9c4df;
+  color: rgb(36, 13, 37);
+  padding: 20px;
+  border-radius: 8px;
 }
