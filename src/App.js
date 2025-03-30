@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Aboutme from "./sections/Aboutme";
@@ -20,56 +21,58 @@ function App() {
 
   // Function to scroll to a section
   const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   return (
-    <div className="app-container">
-      {/* Navbar with scrolling functionality */}
-      <Navbar
-        scrollToSection={scrollToSection}
-        aboutRef={aboutRef}
-        skillsRef={skillsRef}
-        projectsRef={projectsRef}
-        educationRef={educationRef}
-        certificationsRef={certificationsRef}
-        contactRef={contactRef}
-      />
+    <BrowserRouter basename="/Portfolio">
+      <div className="app-container">
+        {/* Navbar with scrolling functionality */}
+        <Navbar
+          scrollToSection={scrollToSection}
+          aboutRef={aboutRef}
+          skillsRef={skillsRef}
+          projectsRef={projectsRef}
+          educationRef={educationRef}
+          certificationsRef={certificationsRef}
+          contactRef={contactRef}
+        />
 
+        {/* Main Content */}
+        <main>
+          <section ref={aboutRef}>
+            <Aboutme />
+          </section>
 
-      {/* About Me Section - Now uses the AboutMe component */}
-      <div ref={aboutRef}>
-        <Aboutme />
-      </div>
+          <section ref={educationRef}>
+            <Education />
+          </section>
 
-      <section ref={educationRef}>
-        <Education />
-      </section>
+          <section ref={skillsRef}>
+            <Skills />
+          </section>
 
+          <section ref={projectsRef}>
+            <Projects />
+          </section>
 
-      <section ref={skillsRef} className="section">
-        < Skills />
-      </section>
+          <section ref={certificationsRef}>
+            <Certifications />
+          </section>
 
-      <section ref={projectsRef} className="section">
-        <Projects />
-      </section>
+          <section ref={contactRef} className="contact-info">
+            <Contact />
+          </section>
+        </main>
 
-
-      <section ref={certificationsRef} className="section">
-        <Certifications />
-
-      </section>
-
-      <section ref={contactRef} className="section contact-info">
-        <Contact />
-      </section>
-      <div>
-        {/* Other components */}
+        {/* Footer */}
         <Footer />
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
