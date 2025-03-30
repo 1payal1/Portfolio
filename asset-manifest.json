@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.579fb85c.css",
+    "main.js": "/portfolio/static/js/main.83833d4d.js",
+    "static/media/schoolImg.png": "/portfolio/static/media/schoolImg.e7c484dfee4842a14a8d.png",
+    "static/media/portfolioImg.png": "/portfolio/static/media/portfolioImg.2da0abfd29bd4e965ac3.png",
+    "static/media/doctorAppImg.png": "/portfolio/static/media/doctorAppImg.90e268976b8dd1c81e76.png",
+    "static/media/Payal Coat white.jpg": "/portfolio/static/media/Payal Coat white.06f8a94822439f21b0d7.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.579fb85c.css.map": "/portfolio/static/css/main.579fb85c.css.map",
+    "main.83833d4d.js.map": "/portfolio/static/js/main.83833d4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.579fb85c.css",
+    "static/js/main.83833d4d.js"
+  ]
+}
